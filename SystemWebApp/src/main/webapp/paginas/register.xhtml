@@ -1,0 +1,140 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:p="http://primefaces.org/ui"
+template="/WEB-INF/templates/Layout.xhtml">
+<ui:define name="content">
+		<h1 class="aw-page-title">Registers 2</h1>
+        	<h:form id="frm">
+			 	<p:toolbar >
+			    	<f:facet name="right">
+				      <p:button style="color:#4BB388;" icon="fa  fa-home" title="Tela Inicial" outcome="/paginas/Inicial.xhtml">
+					   </p:button>
+
+
+					<span class="ui-separator">
+						<span class="ui-icon ui-icon-grip-dotted-vertical"  />
+            		</span>
+
+					 
+
+	
+<p:button style="color:#4BB388;" icon="fa fa-pencil-square-o" title="Cotação" outcome="/paginas/register1.xhtml">
+	    			</p:button>
+			
+
+				</f:facet>
+
+
+			</p:toolbar>
+			
+				<p:tabView >
+				</p:tabView>
+
+
+
+<p:panel  header="Sign-Up Form"> 
+           
+              <h:panelGrid columns="1">
+
+                <p:outputLabel value="Name" />
+                <h:panelGrid columns="4"  >
+                <p:inputText>
+                </p:inputText>
+         
+                <p:inputText>
+                </p:inputText>
+
+            
+            
+              </h:panelGrid>
+
+              <p:outputLabel value="Contact No" />
+
+              <h:panelGrid columns="2" >  
+                <p:selectOneMenu   style="width: 150px">
+                  <f:selectItem itemLabel="Mobile" itemValue="1" />
+                  <f:selectItem itemLabel="Work" itemValue="2" />
+                  <f:selectItem itemLabel="Office" itemValue="3" />
+                  <f:selectItem itemLabel="Work Fax" itemValue="4" />
+                </p:selectOneMenu>
+
+                <p:inputMask  mask="9999999999"   >
+                </p:inputMask>
+
+                <p:selectOneMenu   style="width: 150px">
+                  <f:selectItem itemLabel="Work" itemValue="1" />
+                  <f:selectItem itemLabel="Mobile" itemValue="2" />
+                  <f:selectItem itemLabel="Office" itemValue="3" />
+                  <f:selectItem itemLabel="Work Fax" itemValue="4" />
+                </p:selectOneMenu>
+
+
+                <p:inputMask mask="9999999999"  >
+                </p:inputMask>
+
+              <p:outputLabel/>
+
+              </h:panelGrid>
+
+              <p:outputLabel value="Enter E-mail" />
+                <h:panelGrid columns="3" >    
+                  <p:inputText>
+                  </p:inputText>
+                  <p:inputText>
+                  </p:inputText>
+                </h:panelGrid>
+
+                <p:outputLabel value="Employer Details" />
+                <h:panelGrid columns="4" >  
+                  <p:inputText> 
+                  </p:inputText>
+                  <p:inputText >
+                  </p:inputText>
+                 </h:panelGrid>
+
+                <p:outputLabel value="Address Details" />
+                <h:panelGrid columns="4" > 
+                  <p:inputText> 
+                  </p:inputText>
+                  
+                  <p:inputText>
+                  </p:inputText>
+                  <p:message for="address2" />
+                  <p:selectOneMenu style="width: 195px"  >            
+                    <f:selectItems/>
+                  </p:selectOneMenu>
+
+
+                  <p:inputText> 
+                  </p:inputText>
+                </h:panelGrid>
+
+<h:panelGrid columns="4" > 
+                  <p:inputText> 
+                  </p:inputText>
+                  
+                  <p:inputText>
+                  </p:inputText>
+                  <p:message for="address2" />
+                  <p:selectOneMenu style="width: 195px"  >            
+                    <f:selectItems/>
+                  </p:selectOneMenu>
+
+
+                  <p:inputText> 
+                  </p:inputText>
+                </h:panelGrid>
+ 
+              </h:panelGrid><!--  -->
+
+             
+                <p:commandButton  value="Submit" style="height: 40px;width: 100px;"/>
+            </p:panel>
+
+
+ </h:form>
+	</ui:define>
+	
+</ui:composition>

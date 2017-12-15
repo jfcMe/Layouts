@@ -1,0 +1,83 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:p="http://primefaces.org/ui"
+template="/WEB-INF/templates/Layout.xhtml">
+<ui:define name="content">
+		<h1 class="aw-page-title">Registers 1</h1>
+        	<h:form id="frm">
+			 	<p:toolbar >
+			    	<f:facet name="right">
+				      <p:button style="color:#4BB388;" icon="fa  fa-home" title="Tela Inicial" outcome="/paginas/Inicial.xhtml">
+					   </p:button>
+
+
+
+
+					<span class="ui-separator">
+						<span class="ui-icon ui-icon-grip-dotted-vertical"  />
+            		</span>
+
+
+	
+<p:button style="color:#4BB388;" icon="fa fa-list-alt" title="Register2" outcome="/paginas/register.xhtml">
+	    			</p:button>
+			
+
+				</f:facet>
+
+
+			</p:toolbar>
+
+	
+			
+				<p:tabView >
+				</p:tabView>
+		 <h:panelGrid columns="4" >
+		 <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel/><h:outputLabel for="bit" value="Demo" style="color:#4BB388;"/>
+            <h:outputLabel for="vdf" value="Demo"  style="color:#4BB388;"/>
+            <p:inputText id="vdf" value="" label="demo" mask="99-9999999"  />
+            <h:outputLabel for="cmpf" value="Demo"  style="color:#4BB388" />
+            <p:inputText id="compf" value="" required="false" label="demo" />
+            <h:outputLabel/>
+        </h:panelGrid>
+			<!-- - -->
+		 <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel/><h:outputLabel/><h:outputLabel/><h:outputLabel for="dem" value="Demo" style="color:#4BB388;"/>
+            <h:outputLabel for="mvd" value="Demo"  style="color:#4BB388;"/>
+            <p:inputText id="mvd" value="" required="false" label="venda"  />
+            <h:outputLabel for="mcmp" value="Demo"  style="color:#4BB388" />
+            <p:inputText id="mcomp" value="" label="Demo" />
+            <h:outputLabel/>
+        </h:panelGrid>
+
+<!--  -->
+<h:panelGrid columns="2" cellpadding="5" >
+            <h:outputLabel/><h:outputLabel/><h:outputLabel/><h:outputLabel for="maiorvenda" value="Maior cotação" style="color:#4BB388;"/>
+            <h:outputLabel for="miorvd" value="Demo"  style="color:#4BB388;"/>
+            <p:inputText id="miorvd" value="" label="venda"  />
+            <h:outputLabel for="maiorcmp" value="Demo"  style="color:#4BB388" />
+            <p:inputText id="maiorcomp" value="" label="Demo" />
+            <h:outputLabel/>
+        </h:panelGrid>
+<!--  -->
+<h:panelGrid columns="2" cellpadding="5" >
+            <h:outputLabel/><h:outputLabel/><h:outputLabel/><h:outputLabel for="maiorvenda" value="Menor cotação" style="color:#4BB388;"/>
+            <h:outputLabel for="mniorvd" value="Demo"  style="color:#4BB388;"/>
+            <p:inputText id="menorvd" value=""  label="venda"  />
+            <h:outputLabel for="menorcmp" value="Demo"  style="color:#4BB388" />
+            <p:inputText id="menorcomp" value="" required="false" label="compra" />
+            <h:outputLabel/>
+        </h:panelGrid>
+
+
+        </h:panelGrid>	
+		
+
+
+ </h:form>
+	</ui:define>
+	
+</ui:composition>
